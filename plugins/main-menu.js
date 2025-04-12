@@ -239,12 +239,15 @@ let userNationality = userNationalityData ? `${userNationalityData.name} ${userN
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-  let img = [ 
+/*  let img = [ 
     'https://i.ibb.co/8MqHdjj/file.jpg',
     'https://i.ibb.co/8MqHdjj/file.jpg',
     'https://i.ibb.co/8MqHdjj/file.jpg',
     'https://i.ibb.co/8MqHdjj/file.jpg'
   ].getRandom()
+*/
+
+let img = './src/catalogo.png';
 
     await m.react('🩸')
     await conn.sendMessage(m.chat, {
